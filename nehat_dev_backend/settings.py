@@ -39,7 +39,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://127.0.0.1:9000",
 ]
-CSRF_TRUSTED_ORIGINS = ['nehat.dev', 'api.nehat.dev']
+CSRF_TRUSTED_ORIGINS = ['https://nehat.dev', 'https://api.nehat.dev']
 
 # Application definition
 
