@@ -31,8 +31,13 @@ SECRET_KEY = 'django-insecure-z%uif8f0#pcrx#^@3ks1nf7v_j^5y=wwo4qc)@dnhor9et5z$9
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_ALL_ORIGINS: True
-
+CORS_ALLOWED_ORIGINS = [
+    "https://nehat.dev",
+    "https://www.nehat.dev",
+    "http://localhost:8080",
+    "http://127.0.0.1:9000",
+]
+CSRF_TRUSTED_ORIGINS = ['nehat.dev', 'api.nehat.dev']
 
 # Application definition
 
