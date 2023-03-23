@@ -32,6 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["api.nehat.dev"]
 CORS_ALLOWED_ORIGINS = [
+    "https://api.nehat.dev",
+    "https://www.api.nehat.dev",
     "https://nehat.dev",
     "https://www.nehat.dev",
     "http://localhost:8080",
