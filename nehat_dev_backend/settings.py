@@ -10,10 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-try:
-    from .local import *
-except:
-    pass
+
 
 from pathlib import Path
 
@@ -30,7 +27,7 @@ SECRET_KEY = 'django-insecure-z%uif8f0#pcrx#^@3ks1nf7v_j^5y=wwo4qc)@dnhor9et5z$9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["api.nehat.dev"]
+ALLOWED_HOSTS = []
 # CORS_ALLOWED_ORIGINS = [
 #     "https://api.nehat.dev",
 #     "https://www.api.nehat.dev",
@@ -155,3 +152,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 
 
+try:
+    from .local import *
+except:
+    pass
