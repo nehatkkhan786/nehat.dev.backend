@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-z%uif8f0#pcrx#^@3ks1nf7v_j^5y=wwo4qc)@dnhor9et5z$9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 # CORS_ALLOWED_ORIGINS = [
 #     "https://api.nehat.dev",
 #     "https://www.api.nehat.dev",
