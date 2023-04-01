@@ -141,17 +141,17 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 
-CORS_ALLOWED_ORIGINS = [
-    "https://api.nehat.dev",
-    "https://www.api.nehat.dev",
-    "https://nehat.dev",
-    "https://www.nehat.dev",
-    "http://localhost:8080",
-    "http://127.0.0.1:9000",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://api.nehat.dev",
+#     "https://www.api.nehat.dev",
+#     "https://nehat.dev",
+#     "https://www.nehat.dev",
+#     "http://localhost:8080",
+#     "http://127.0.0.1:9000",
+# ]
 
 
 
