@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 
 
-CSRF_TRUSTED_ORIGINS = ['https://nehat.dev', 'https://api.nehat.dev']
+CSRF_TRUSTED_ORIGINS = ['https://nehat.dev', 'https://api.nehat.dev', 'http://localhost:3000', ]
 
 # Application definition
 
@@ -45,10 +45,13 @@ INSTALLED_APPS = [
 
     # local Apps
     'nehat.apps.NehatConfig',
+    'blog.apps.BlogConfig',
+    'api.apps.ApiConfig',
 
     # Third Party Apps
     'corsheaders',
     'rest_framework',
+    'markdownx',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +70,7 @@ ROOT_URLCONF = 'nehat_dev_backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -141,7 +144,7 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # CORS_ALLOWED_ORIGINS = [
@@ -161,3 +164,7 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+
+
+
