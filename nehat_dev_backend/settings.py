@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 
 
-# CSRF_TRUSTED_ORIGINS = ['https://nehat.dev', 'https://api.nehat.dev', 'http://localhost:3000', 'https://*.vercel.app' ]
+CSRF_TRUSTED_ORIGINS = ['https://nehat.dev', 'https://api.nehat.dev', 'http://localhost:3000', 'https://*.vercel.app', 'http://127.0.0.1' ]
 
 # Application definition
 
